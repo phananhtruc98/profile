@@ -9,22 +9,26 @@ const contacts = [
     {
         id: 1,
         iconUrl: PhoneCall,
-        data: "+0704569020",
+        data: "+84704569020",
+        type: "Phone"
     },
     {
         id: 2,
         iconUrl: Mail,
         data: "anhtrucphanit@gmail.com",
+        type: "Mail"
     },
     {
         id: 3,
         iconUrl: Github,
         data: "https://github.com/phananhtruc98",
+        type: "Link"
     },
     {
         id: 4,
         iconUrl: MapPin,
         data: "Ho Chi Minh City",
+        type: ""
     },
 ];
 class Contact extends Component {
@@ -34,6 +38,7 @@ class Contact extends Component {
                 key={contactItem.id}
                 iconUrl={contactItem.iconUrl}
                 data={contactItem.data}
+                type={contactItem.type}
             ></ContactItem>
         ));
     }

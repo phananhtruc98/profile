@@ -6,7 +6,7 @@ class Education extends Component {
         return (
             <div>
                 <div className="float-none">
-                    <div className="lh-1">
+                    <div className="lh-1 mb-1">
                         <span className="fs-5 fw-bold text-uppercase">Sai Gon University</span> &nbsp;
                         <span className="fs-14">2016 - 2020</span>&nbsp;<br/>
                         <span className="fs-5 fw-bold">The Degree of Engineer</span> 

@@ -4,6 +4,12 @@
         url('./assets/fonts/Quicksand-VariableFont_wght.ttf') format('truetype'),
 }
 
+$header: #00426c;
+$bg: #cfcfcf;
+$text: rgba(255, 255, 255, .7);
+$hover: darken($bg, 10%);
+$hoverMenu: darken($header, 10%);
+$bannerUrl : url('./assets/images/banner.jpeg');
 // @import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
 $font-stack: 'Quicksand',
 sans-serif;
@@ -28,12 +34,92 @@ body {
     letter-spacing: 2px;
 }
 
-.fw-bold{
+.fw-bold {
     font-weight: bold !important;
 }
-.fs-5{
+
+.fs-5 {
     font-size: 16px !important;
 }
-.fs-14{
+
+.fs-14 {
     font-size: 14px !important;
+}
+
+.contact-item {
+    padding-top: 10px;
+
+    &:before {
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 2px;
+        background: $hover;
+        transform: scaleX(0);
+    }
+
+    &:hover:before {
+        cursor: pointer;
+        transform: scaleX(1);
+    }
+}
+
+a {
+    position: relative;
+    color: inherit;
+    text-decoration: none;
+    line-height: 24px;
+
+    &:before,
+    &:after {
+        content: '';
+        position: absolute;
+        transition: transform .5s ease;
+    }
+}
+
+.banner-frame {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, .7);
+}
+#app{
+    top: 0px;
+    // background-color: #232f34 !important;
+    background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);
+    // background: url('./assets/images/banner.jpeg') no-repeat !important;
+}
+.container{
+    border-radius: 20px;
+    opacity: 1;
+    background-color:  rgba(255, 255, 255, .7);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.border-left{
+    border-color: #6c8b99 !important;
+}
+.menu{
+    color: $header;
+    font-weight: bold;
+
+    &-item:hover{
+        cursor: pointer;
+    }
+}
+.menu-item{
+    padding-top: 10px;
+
+    &:before {
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 2px;
+        background: $hoverMenu;
+        transform: scaleX(0);
+    }
+
+    &:hover:before {
+        cursor: pointer;
+        transform: scaleX(1);
+    }
 }
