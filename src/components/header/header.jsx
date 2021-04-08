@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "../../_custom.scss";
+import 'bootstrap/dist//js/bootstrap.js';
 import MenuIcon from "../../assets/images/icon/menu.svg";
 class Header extends Component {
     constructor(props) {
@@ -17,13 +18,13 @@ class Header extends Component {
         return (
             <div className="header pb-2">
                 <div className="row menu d-none d-lg-flex">
-                    <div className="col-lg-1 offset-lg-6"><a href="#" className="menu-item text-reset text-decoration-none">home</a></div>
+                    <div className="col-lg-1 offset-lg-5"><a href="#" className="menu-item text-reset text-decoration-none">home</a></div>
                     <div className="col-lg-1 offset-lg-1 ml-4"><a href="#" className="menu-item text-reset text-decoration-none">profile</a></div>
                     <div className="col-lg-1 offset-lg-1 ml-4"><a href="#" className="menu-item text-reset text-decoration-none">projects</a></div>
                     <div className="col-lg-1 offset-lg-1 ml-4"><a href="#" className="menu-item text-reset text-decoration-none">contact</a></div>
                 </div>
-                <div className="d-lg-none">
-                    <div className="row text-right">
+                <div className="row d-lg-none">
+                    <div className="text-right btn-menu">
                         <a href="#" className="icon" onClick={this.handleClick}>
                             <img src={MenuIcon} />
                         </a>

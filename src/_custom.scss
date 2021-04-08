@@ -15,6 +15,8 @@ $font-stack: 'Quicksand',
 sans-serif;
 $primary-color: #333;
 $primary-size: 20px !important;
+$arrow-left: url('./assets/images/arrow-left.png');
+$arrow-right: url('./assets/images/arrow-right.png');
 
 body {
     font-family: $font-stack;
@@ -83,30 +85,35 @@ a {
     height: 100%;
     background-color: rgba(255, 255, 255, .7);
 }
-#app{
+
+#app {
     top: 0px;
     // background-color: #232f34 !important;
     background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);
     // background: url('./assets/images/banner.jpeg') no-repeat !important;
 }
-.container{
+
+.container {
     border-radius: 20px;
     opacity: 1;
-    background-color:  rgba(255, 255, 255, .7);
+    background-color: rgba(255, 255, 255, .7);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.border-left{
+
+.border-left, .border-bottom {
     border-color: #6c8b99 !important;
 }
-.menu{
+
+.menu {
     color: $header;
     font-weight: bold;
 
-    &-item:hover{
+    &-item:hover {
         cursor: pointer;
     }
 }
-.menu-item{
+
+.menu-item {
     padding-top: 10px;
 
     &:before {
@@ -122,4 +129,68 @@ a {
         cursor: pointer;
         transform: scaleX(1);
     }
+}
+
+.btn-menu {
+    position: relative;
+    z-index: 1;
+}
+
+.menu-mobile-items {
+    margin-top: 35px;
+    max-width: 300px !important;
+    position: absolute;
+    background-color: rgba(255, 255, 255, .7);
+}
+
+.carousel.slide {
+    .carousel-item {
+        transition: transform .4s ease-in-out;
+    }
+}
+
+.carousel-control-next-icon {
+    background-image: $arrow-right;
+}
+
+.carousel-control-prev-icon {
+    background-image: $arrow-left;
+}
+.carousel-control-next-icon, .carousel-control-prev-icon{
+    width: 20px;
+    height: 50px;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    background: none !important;
+    border: none !important;
+}
+
+.image-box-enter {
+    opacity: 0;
+    transform: scale(0.9);
+}
+
+.image-box-enter-active {
+    opacity: 1;
+    transform: translateX(0);
+    transition: opacity 300ms, transform 300ms;
+}
+
+.image-box-exit {
+    opacity: 1;
+}
+
+.image-box-exit-active {
+    opacity: 0;
+    transform: translateX(0);
+    transition: opacity 300ms, transform 300ms;
+}
+.image-box{
+    z-index: 1;
+    width: 80%;
+}
+.cursor-pointer{
+    cursor: pointer;
 }

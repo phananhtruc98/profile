@@ -5,6 +5,7 @@ import PhoneCall from "../../assets/images/icon/phone-call.svg";
 import Mail from "../../assets/images/icon/mail.svg";
 import Github from "../../assets/images/icon/github.svg";
 import MapPin from "../../assets/images/icon/map-pin.svg";
+import Linkedin from "../../assets/images/icon/linkedin.svg";
 const contacts = [
     {
         id: 1,
@@ -26,6 +27,12 @@ const contacts = [
     },
     {
         id: 4,
+        iconUrl: Linkedin,
+        data: "https://www.linkedin.com/in/truc-phan-0521481a3/",
+        type: "Link"
+    }, 
+    {
+        id: 5,
         iconUrl: MapPin,
         data: "Ho Chi Minh City",
         type: ""
