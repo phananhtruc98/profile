@@ -6,7 +6,6 @@ class Carousel extends Component {
         var { images } = this.props;
         var { carouselId } = this.props;
         var { carouselIdTarget } = this.props;
-        debugger
         return (
             <div id={carouselId} className="carousel slide" data-bs-ride="carousel">
                 <div className="carousel-indicators">

@@ -48,7 +48,8 @@ class JobItem extends Component {
                             <span className="fs-5 fw-bold">Projects:</span> <br />
                             {projects.map((el) => (
                                 <span className="fs-5" key={el.id}>
-                                    <img src={TerminalIcon} /> {el.data}
+                                    <img src={TerminalIcon} />
+                                    <span>Team size: {el.teamSize}</span> | {el.data}
                                     <br />
                                 </span>
                             ))}
@@ -58,20 +59,20 @@ class JobItem extends Component {
                 {/* {this.state.showButton && images && images.length > 0 && (<img onClick={() => this.setState({ showMessage: !this.state.showMessage })} className="showMore pb-3 float-left" src={InfoIcon} />)} */}
                 {this.state.showButton && images && images.length > 0 && (<div onClick={() => this.setState({ showMessage: !this.state.showMessage })} className="showMore pb-3 float-left text-decoration-underline cursor-pointer" ><p >some images</p></div>)}
                 <div>
-                <CSSTransition
-                    in={this.state.showMessage}
-                    timeout={300}
-                    classNames="image-box"
-                    unmountOnExit
-                    onEnter={() => this.setState({ showMessage: true })}
-                    onExited={() => this.setState({ showMessage: false })}
-                >
-                    <div className="image-box p-3">
-                        <div>
-                            <Carousel carouselId={carouselId} carouselIdTarget={carouselIdTarget} images={images}></Carousel>
+                    <CSSTransition
+                        in={this.state.showMessage}
+                        timeout={300}
+                        classNames="image-box"
+                        unmountOnExit
+                        onEnter={() => this.setState({ showMessage: true })}
+                        onExited={() => this.setState({ showMessage: false })}
+                    >
+                        <div className="image-box p-3">
+                            <div>
+                                <Carousel carouselId={carouselId} carouselIdTarget={carouselIdTarget} images={images}></Carousel>
+                            </div>
                         </div>
-                    </div>
-                </CSSTransition>
+                    </CSSTransition>
                 </div>
             </div >
         );
