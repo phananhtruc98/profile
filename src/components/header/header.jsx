@@ -17,7 +17,7 @@ class Header extends Component {
     render() {
         return (
             <div className="header pb-2">
-                <div className="row menu d-none d-lg-flex">
+                {/* <div className="row menu d-none d-lg-flex">
                     <div className="col-lg-1 offset-lg-5"><a href="#" className="menu-item text-reset text-decoration-none">home</a></div>
                     <div className="col-lg-1 offset-lg-1 ml-4"><a href="#" className="menu-item text-reset text-decoration-none">profile</a></div>
                     <div className="col-lg-1 offset-lg-1 ml-4"><a href="#" className="menu-item text-reset text-decoration-none">projects</a></div>
@@ -35,7 +35,7 @@ class Header extends Component {
                         <div className="col-sm-12 text-center"><a href="#" className="menu-item text-reset text-decoration-none">projects</a></div>
                         <div className="col-sm-12 text-center"><a href="#" className="menu-item text-reset text-decoration-none">contact</a></div>
                     </div>
-                </div>
+                </div> */}
             </div>
         );
     }

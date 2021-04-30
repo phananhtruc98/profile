@@ -37,9 +37,6 @@ class Container extends React.Component {
                             </div>
                             <div className="col-lg-5  align-self-center">
                                 <div>
-                                    <div className="fs-2 text-uppercase loose fw-bold">
-                                        CONTACTS
-                                    </div>
                                     <Contact />
                                 </div>
                             </div>
@@ -47,7 +44,7 @@ class Container extends React.Component {
                     </div>
                     <div className="row mt-5">
                         <div className="col-lg-2 col-sm-12"></div>
-                        <div className="col-lg-2  col-sm-12 fs-2 text-uppercase loose fw-bold">
+                        <div className="col-lg-2  col-sm-12 text-uppercase loose fw-bold">
                             About me
                         </div>
                         <div className="col-lg-8 col-sm-8 border-2 border-left">
@@ -56,7 +53,7 @@ class Container extends React.Component {
                     </div>
                     <div className="row mt-5">
                         <div className="col-lg-2 col-sm-12"></div>
-                        <div className="col-lg-2 col-sm-12 fs-2 text-uppercase loose fw-bold">
+                        <div className="col-lg-2 col-sm-12 text-uppercase loose fw-bold">
                             Objectives
                         </div>
                         <div className="col-lg-8 col-sm-12 border-2 border-left">
@@ -65,7 +62,7 @@ class Container extends React.Component {
                     </div>
                     <div className="row mt-5">
                         <div className="col-lg-2 col-sm-12"></div>
-                        <div className="col-lg-2 col-sm-12 fs-2 text-uppercase loose fw-bold">
+                        <div className="col-lg-2 col-sm-12 text-uppercase loose fw-bold">
                             Education
                         </div>
                         <div className="col-lg-8 col-sm-12 border-2 border-left">
@@ -74,7 +71,7 @@ class Container extends React.Component {
                     </div>
                     <div className="row mt-5">
                         <div className="col-lg-2 col-sm-12"></div>
-                        <div className="col-lg-2 col-sm-12 fs-2 text-uppercase loose fw-bold">
+                        <div className="col-lg-2 col-sm-12 text-uppercase loose fw-bold">
                             Work experience
                         </div>
                         <div className="col-lg-8 col-sm-12 border-2 border-left">

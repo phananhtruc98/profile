@@ -2,10 +2,7 @@ import React, { Component } from "react";
 import "../../_custom.scss";
 import 'bootstrap/dist//js/bootstrap.js';
 import TerminalIcon from "../../assets/images/icon/terminal.svg";
-import InfoIcon from "../../assets/images/icon/info.svg";
-import MeAndBoss from "../../assets/images/Me and Boss.jpg";
-import Internship from "../../assets/images/Internship.jpg";
-import TraineeAndTechlead from "../../assets/images/Trainee and Techlead.jpg";
+import ImageIcon from "../../assets/images/icon/image-gallery.png";
 import { CSSTransition } from 'react-transition-group';
 import Carousel from '../carousel/carousel';
 
@@ -31,7 +28,7 @@ class JobItem extends Component {
                     </span>
                     <br />
                     <span className="fs-5 fw-bold">
-                        {job.positionTitle} &nbsp;
+                        {job.positionTitle} &nbsp; {this.state.showButton && images && images.length > 0 && (<span onClick={() => this.setState({ showMessage: !this.state.showMessage })} className="showMore pb-3 float-left text-decoration-underline cursor-pointer" ><img src={ImageIcon}/></span>)}
                     </span>
                 </div>
                 <ul>
@@ -56,8 +53,6 @@ class JobItem extends Component {
                         </li>
                     }
                 </ul>
-                {/* {this.state.showButton && images && images.length > 0 && (<img onClick={() => this.setState({ showMessage: !this.state.showMessage })} className="showMore pb-3 float-left" src={InfoIcon} />)} */}
-                {this.state.showButton && images && images.length > 0 && (<div onClick={() => this.setState({ showMessage: !this.state.showMessage })} className="showMore pb-3 float-left text-decoration-underline cursor-pointer" ><p >some images</p></div>)}
                 <div>
                     <CSSTransition
                         in={this.state.showMessage}
