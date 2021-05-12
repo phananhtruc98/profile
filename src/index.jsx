@@ -7,4 +7,14 @@ import 'bootstrap';
 import './_custom.scss';
 import ReactDOM from 'react-dom';
 import Container from './components/container/container';
-ReactDOM.render(<Container/>, document.getElementById('app'));
+import Blogs from './components/blogs/blogs';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+ReactDOM.render(
+    <BrowserRouter>
+        <main>
+            <Switch>
+                <Route path="/"><Container /></Route>
+                <Route path="/blogs"><Blogs /></Route>
+            </Switch>
+        </main>
+    </BrowserRouter>, document.getElementById('app'));

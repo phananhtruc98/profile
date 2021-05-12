@@ -97,7 +97,8 @@ a {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.border-left, .border-bottom {
+.border-left,
+.border-bottom {
     border-color: #6c8b99 !important;
 }
 
@@ -146,6 +147,8 @@ a {
     }
 }
 
+
+
 .carousel-control-next-icon {
     background-image: $arrow-right;
 }
@@ -153,7 +156,9 @@ a {
 .carousel-control-prev-icon {
     background-image: $arrow-left;
 }
-.carousel-control-next-icon, .carousel-control-prev-icon{
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
     width: 20px;
     height: 50px;
 }
@@ -184,10 +189,21 @@ a {
     transform: translateX(0);
     transition: opacity 300ms, transform 300ms;
 }
-.image-box{
+
+.image-box {
     z-index: 1;
     width: 80%;
 }
-.cursor-pointer{
+
+.cursor-pointer {
     cursor: pointer;
+}
+
+.header {
+    margin-left: 3rem;
+    margin-right: 3rem;
+    margin-bottom: 1rem;
+    a {
+        margin-right: 1.5rem;
+    }
 }

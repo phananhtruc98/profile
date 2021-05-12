@@ -4,9 +4,8 @@ import Objectives from "../objectives/objectives";
 import AboutMe from "../about/about-items";
 import Education from "../education/education";
 import Jobs from "../work-experience/jobs";
-import Header from "../header/header";
 import Avatar from "../../assets/images/avaCV.jpg";
-import Banner from "../../assets/images/banner.jpeg";
+import Header from '../header/header';
 class Container extends React.Component {
     render() {
         const mystyle = {
@@ -15,7 +14,7 @@ class Container extends React.Component {
         };
         return (
             <div>
-            <Header />
+                <Header />
                 <div className="container pt-5 pb-5">
                     <div className="banner-text">
                         <div className="row">
