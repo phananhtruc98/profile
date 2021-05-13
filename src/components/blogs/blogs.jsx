@@ -5,7 +5,6 @@ class Blogs extends Component {
     render() {
         return (
             <div>
-                <Header />
                 <span className="fs-5">Test Blogger</span>
             </div>
         );

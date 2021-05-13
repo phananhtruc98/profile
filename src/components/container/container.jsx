@@ -14,7 +14,6 @@ class Container extends React.Component {
         };
         return (
             <div>
-                <Header />
                 <div className="container pt-5 pb-5">
                     <div className="banner-text">
                         <div className="row">

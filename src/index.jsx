@@ -8,12 +8,14 @@ import './_custom.scss';
 import ReactDOM from 'react-dom';
 import Container from './components/container/container';
 import Blogs from './components/blogs/blogs';
+import Header from './components/header/header';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 ReactDOM.render(
-    <BrowserRouter>
+    <BrowserRouter basename="/">
+        <Header />
         <main>
             <Switch>
-                <Route path="/"><Container /></Route>
+                <Route exact path="/"><Container /></Route>
                 <Route path="/blogs"><Blogs /></Route>
             </Switch>
         </main>
