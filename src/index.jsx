@@ -6,9 +6,9 @@ import Popper from 'popper.js';
 import 'bootstrap';
 import './_custom.scss';
 import ReactDOM from 'react-dom';
-import Container from './components/container/container';
-import Blogs from './components/blogs/blogs';
-import Header from './components/header/header';
+import Container from './pages/container/container';
+import Blogs from './pages/blogs/blogs';
+import Header from './pages/header/header';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 ReactDOM.render(
     <BrowserRouter basename="/">
