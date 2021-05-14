@@ -274,3 +274,147 @@ a {
         }
     }
 }
+
+.top-post {
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    .top-post-img {
+        display: block;
+        border-radius: 25px;
+        overflow: hidden;
+        box-sizing: border-box;
+        margin-bottom: 10px;
+
+        img {
+            height: auto;
+            width: 100%;
+        }
+    }
+
+    .top-post-content {
+        padding-left: 5%;
+        padding-top: 10px;
+        position: relative;
+
+        .top-post-tag {
+            top: 0;
+            font-size: 13px;
+            font-weight: bold;
+            color: #bf4c3d;
+            background-color: #FFF4F3;
+            border-radius: 30px;
+            padding: 10px;
+        }
+
+        .top-post-title {
+            font-size: 30px;
+            font-weight: bold;
+            color: #0d0a1e;
+            margin-top: 10px;
+            text-transform: uppercase;
+        }
+
+        .top-post-excerpts {
+            font-size: 16px;
+            color: #8c899e;
+            line-height: 1.5;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .top-post-author {
+            font-size: 13px;
+            font-weight: bold;
+            color: #8c87a6;
+            text-transform: uppercase;
+
+            &:after {
+                content: " \B7  ";
+            }
+        }
+
+        .top-post-date {
+            font-size: 13px;
+            font-weight: bold;
+            color: #8c87a6;
+            text-transform: uppercase;
+        }
+    }
+}
+
+.newsletter {
+    margin: 10px;
+    padding: 30px;
+    width: 100%;
+    font-size: 16px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    .newsletter-title {
+        font-size: 24px;
+        font-weight: bold;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    .newsletter-subtitle {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .newsletter-email {
+        input[type=text] {
+            width: 100%;
+        }
+    }
+}
+
+.tagline {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 3rem;
+}
+
+input[type=text] {
+    font-size: max(16px, 1em);
+    font-family: inherit;
+    padding: 0.25em 0.5em;
+    background-color: #fff;
+    border-radius: 20px;
+    border: #e1dfec solid 1px;
+}
+
+input[type=submit] {
+    font-size: max(16px, 1em);
+    font-family: inherit;
+    padding: 0.25em 0.5em;
+    background-color: #5138ee;
+    border-radius: 20px;
+    border: #5138ee solid 1px;
+    color: #fff;
+}
+
+hr {
+    color: #8c87a6;
+}
+
+.category {    
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    .item {
+        font-size: 14px;
+        color: #8c87a6;
+        padding: 10px;
+        text-align: center;
+        font-weight: bold;
+        &:hover {
+            color: #6651f0;
+            border: 0.5px solid #e3e0fc;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+    }
+
+}
