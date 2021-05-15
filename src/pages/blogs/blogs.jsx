@@ -28,21 +28,21 @@ class Blogs extends Component {
                     </div>
                 </div>
                 <hr />
-                <div className="category">
-                    <span className="item">All categories</span>
-                    <span className="item">Development</span>
-                    <span className="item">Healthy lifestyle</span>
-                    <span className="item">Experiences</span>
-                    <span className="item">Healthy lifestyle</span>
-                    <span className="item">Experiences</span>
+                <div className="row category">
+                    <span className="col-md-2 col-xs-12 item">All categories</span>
+                    <span className="col-md-2 col-xs-12 item">Development</span>
+                    <span className="col-md-2 col-xs-12 item">Healthy lifestyle</span>
+                    <span className="col-md-2 col-xs-12 item">Experiences</span>
+                    <span className="col-md-2 col-xs-12 item">Healthy lifestyle</span>
+                    <span className="col-md-2 col-xs-12 item">Experiences</span>
                 </div>
                 <hr />
                 <div className="row">
                     <div className="col-md-8 col-xs-12">
-                        <div className="post-grid">
-                            <Post />
-                            <Post />
-                            <Post />
+                        <div className="post-grid row">
+                            <div className="col-md-6 col-xs-12"><Post /></div>
+                            <div className="col-md-6 col-xs-12"><Post /></div>
+                            <div className="col-md-6 col-xs-12"><Post /></div>
                         </div>
                     </div>
                     <div className="col-md-4 col-xs-12">

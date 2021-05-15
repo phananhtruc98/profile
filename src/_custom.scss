@@ -210,10 +210,6 @@ a {
 }
 
 .post-grid {
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    padding: 0;
-    gap: 2rem;
     height: 100%;
 
     .post {
@@ -346,7 +342,7 @@ a {
 }
 
 .newsletter {
-    margin: 10px;
+    margin: 5px;
     padding: 30px;
     width: 100%;
     font-size: 16px;
@@ -365,9 +361,7 @@ a {
     }
 
     .newsletter-email {
-        input[type=text] {
-            width: 100%;
-        }
+        width: 100%;
     }
 }
 
@@ -400,15 +394,14 @@ hr {
     color: #8c87a6;
 }
 
-.category {    
-    display: grid;
-    grid-template-columns: repeat(6, minmax(0, 1fr));
+.category {
     .item {
         font-size: 14px;
         color: #8c87a6;
         padding: 10px;
         text-align: center;
         font-weight: bold;
+
         &:hover {
             color: #6651f0;
             border: 0.5px solid #e3e0fc;
