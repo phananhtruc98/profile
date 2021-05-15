@@ -39,6 +39,10 @@ module.exports = {
                 ],
             },
             {
+                test: /\.txt$/i,
+                use: "raw-loader",
+            },
+            {
                 test: /\.(js|jsx)$/,
                 exclude: /node_modules/,
                 use: ["babel-loader"],
