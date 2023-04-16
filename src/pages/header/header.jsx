@@ -19,6 +19,8 @@ class Header extends Component {
             <div className="header text-end">
                 <Link to="/">Home </Link>
                 <Link to="/blogs">Blogs </Link>
+                {/* <Link to="/secret">Admin</Link>
+                <Link to="/create">Create</Link> */}
             </div>
         );
     }

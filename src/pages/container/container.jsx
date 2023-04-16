@@ -4,7 +4,8 @@ import Objectives from "../../components/objectives/objectives";
 import AboutMe from "../../components/about/about-items";
 import Education from "../../components/education/education";
 import Jobs from "../../components/work-experience/jobs";
-import Avatar from "../../assets/images/avaCV.jpg";
+import Avatar from "../../assets/images/avatar2023.jpeg";
+import Certificates from "../../components/certificate/certificates";
 class Container extends React.Component {
     render() {
         const mystyle = {
@@ -73,6 +74,15 @@ class Container extends React.Component {
                         </div>
                         <div className="col-lg-8 col-sm-12 border-2 border-left">
                             <Jobs />
+                        </div>
+                    </div>
+                    <div className="row mt-5">
+                        <div className="col-lg-2 col-sm-12"></div>
+                        <div className="col-lg-2 col-sm-12 text-uppercase loose fw-bold">
+                            Licenses & certifications
+                        </div>
+                        <div className="col-lg-8 col-sm-12 border-2 border-left">
+                            <Certificates />
                         </div>
                     </div>
                 </div>

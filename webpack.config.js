@@ -10,7 +10,7 @@ module.exports = {
         extensions: ["*", ".js", ".jsx"],
     },
     devServer: {
-        contentBase: path.resolve(__dirname, "./dist"),
+        static: path.resolve(__dirname, "./dist"),
         hot: true,
     },
     output: {
@@ -26,8 +26,7 @@ module.exports = {
     ],
     mode: "development",
     module: {
-        rules: [
-            {
+        rules: [{
                 test: /\.s[ac]ss$/i,
                 use: [
                     // Creates `style` nodes from JS strings

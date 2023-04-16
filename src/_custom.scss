@@ -378,8 +378,15 @@ input[type=text] {
     background-color: #fff;
     border-radius: 20px;
     border: #e1dfec solid 1px;
+    &.email{
+        width: 60%;
+        margin-right: 2%;
+    }
 }
 
+textarea[type=text]{
+    width: 100%;
+}
 input[type=submit] {
     font-size: max(16px, 1em);
     font-family: inherit;
@@ -388,6 +395,20 @@ input[type=submit] {
     border-radius: 20px;
     border: #5138ee solid 1px;
     color: #fff;
+}
+
+.btn {
+    font-size: max(16px, 1em);
+    font-family: inherit;
+    padding: 0.25em 0.5em;
+    background-color: #5138ee;
+    border-radius: 20px;
+    border: #5138ee solid 1px;
+    color: #fff;
+
+    &.btn-save {
+        width: 100%;
+    }
 }
 
 hr {
@@ -402,12 +423,21 @@ hr {
         text-align: center;
         font-weight: bold;
 
-        &:hover, &.active {
+        &:hover,
+        &.active {
             color: #6651f0;
             border: 0.5px solid #e3e0fc;
             border-radius: 20px;
             cursor: pointer;
         }
     }
+}
 
+.action-grid {
+    .action {
+        margin: 10px;
+        padding: 5%;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        border-radius: 20px;
+    }
 }

@@ -13,7 +13,7 @@ class Blogs extends Component {
 
     render() {
         return (
-            <div>
+            <div className="m-md-5 p-md-5">
                 <div className="row tagline">
                     <div className="col-12 text-center">
                         I love to share knowledge
